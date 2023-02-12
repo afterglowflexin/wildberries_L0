@@ -3,6 +3,4 @@ CREATE TABLE orders (
   order_data jsonb
 );
 
-INSERT INTO orders (order_data) VALUES ('{"Red":"Red"}'), ('{"Blue":"Blue"}');
-
 SELECT * FROM orders;
