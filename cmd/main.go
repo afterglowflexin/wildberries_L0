@@ -17,7 +17,7 @@ func main() {
 	//open DB connection
 	//need no set db url
 	// urlExample := "postgres://username:password@localhost:5432/database_name"
-	os.Setenv("DATABASE_URL", "postgres://username:password@localhost:5432/database_name")
+	os.Setenv("DATABASE_URL", "postgres://1315474:44uthy9a@localhost:5432/wb")
 	conn := store.OpenConnection()
 	defer conn.Close(context.Background())
 

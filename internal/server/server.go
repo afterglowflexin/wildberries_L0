@@ -18,7 +18,7 @@ func New(cache *cache.Cache) *serverHTTP {
 
 func (s *serverHTTP) Start() {
 	http.HandleFunc("/", s.Serve)
-	log.Println("[DEBUG] starting http server")
+	log.Println("starting http server")
 	http.ListenAndServe(":8080", nil)
 }
 

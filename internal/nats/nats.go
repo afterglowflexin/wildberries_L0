@@ -12,13 +12,13 @@ func NewStanServer() stan.Conn {
 	if err != nil {
 		panic(err)
 	}
-	log.Println("[DEBUG] connected to NATS")
+	log.Println("connected to NATS")
 
 	sc, err := stan.Connect("test-cluster", "clienttest", stan.NatsConn(nc))
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("[DEBUG] connected to Streaming server")
+	log.Println("connected to Streaming server")
 
 	return sc
 }
